@@ -1,0 +1,62 @@
+
+.dark-body{
+    background-color: #101010;
+    color: #fff;
+    .sign-up{
+        position: relative;
+        margin: 60px auto 0;
+        padding: 20px;
+        width: 400px;
+        background: #1f1f1f!important;
+        // box-shadow: 0px 10px 8px 4px rgba(0,0,0,.2);
+        .modal-title{
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        #modal-login{
+            .modal-form-item{
+                color: $white;
+                position: relative;
+                margin-bottom: 12px;
+                label{
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                }
+                input{
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 12px 10px ;
+                    border: none;
+                    outline: none;
+                    border-radius: 4px;
+                    margin-top: 4px;
+                }
+                i{
+                    color: #454545;
+                    font-size: 18px;
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+                .required{
+                    color: red;
+                }
+                
+            }
+            .modal-btn{
+                background: $primary-dark;
+                color: $white;
+                width: 100%;
+                border-radius: 4px;
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+            .link-signup{
+                color: $primary-dark;
+            }
+        }
+    }
+}

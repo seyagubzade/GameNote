@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameNote Baku</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/102d26b2ed.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="dark-body">
+    <div class="container">
+      <div class="row">
+        <a href="/" class="header showOndesktop">
+          <img class="logo" src="https://gamenotebaku.az/img/logo.png" />
+        </a>
+      </div>
+      <div class="row">
+        <div class="sign-up">
+          <h3 class="modal-title">Qeydiyyat</h3>
+          <form id="modal-login">
+            <div class="modal-form-item">
+              <label for="userName"
+                >İstifadəçi adı <span class="required">*</span></label
+              >
+              <input type="text" id="userName" placeholder="İstifadəçi adı" />
+            </div>
+            <div class="modal-form-item">
+              <label for="name">Ad <span class="required">*</span></label>
+              <input type="text" id="name" placeholder="Ad" />
+            </div>
+            <div class="modal-form-item">
+              <label for="surname">Soyad <span class="required">*</span></label>
+              <input type="text" id="surname" placeholder="Soyad" />
+            </div>
+            <div class="modal-form-item">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="text" id="email" placeholder="Email" />
+            </div>
+            <div class="modal-form-item">
+              <label for="phone"
+                >Telefon nömrəsi <span class="required">*</span></label
+              >
+              <input type="text" id="phone" placeholder="Telefon nömrəsi" />
+            </div>
+            <div class="modal-form-item">
+              <label for="birthDate">Doğum tarixi</label>
+              <input type="date" id="birthDate" placeholder="Doğum tarixi" />
+            </div>
+            <div class="modal-form-item">
+              <label for="password"
+                >Şifrə <span class="required">*</span></label
+              >
+
+              <input type="password" id="password" placeholder="Şifrə" />
+            </div>
+            <div class="modal-form-item">
+              <label for="passwordRepeat"
+                >Şifrəni təsdiqləyin <span class="required">*</span></label
+              >
+
+              <input
+                type="password"
+                id="passwordRepeat"
+                placeholder="Şifrəni təsdiqləyin"
+              />
+            </div>
+            <button type="submit" class="btn modal-btn mb-12">Qeydiyyatdan keç</button>
+            <p>
+                Qeydiyyatdan keçmisiniz?
+              <a href="./index.html" class="link-signup">Daxil ol.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/signUp.js" type="module"></script>
+  </body>
+</html>

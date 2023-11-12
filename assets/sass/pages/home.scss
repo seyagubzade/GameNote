@@ -1,0 +1,83 @@
+main {
+    background: $bg-dark;
+    .divider-title {
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+        margin: 20px 0;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: 400!important;
+        position: relative;
+        display: table;
+        height: auto;
+      
+        &::before,
+        &::after {
+          content: "";
+          display: table-cell;
+          top: 50%;
+          width: 50%;
+          background-repeat: no-repeat;
+          background-image: url("../images/line.png");
+        }
+      
+        &::before {
+          background-position: right 1em top 50%;
+        }
+      
+        &::after {
+          background-position: left 1em top 50%;
+        }
+        h3{
+            font-weight: 400!important;
+        }
+      }
+      
+    .laptops-list {
+        .card {
+            .card-top {
+                width: 100%;
+                margin: 16px 0 40px;
+                height: 150px;
+                @include flex-container(row, center, center);
+                img {
+                    width: 90%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .card-bottom {
+                position: relative;
+                .like-btn {
+                    position: absolute;
+                    right: 12px;
+                    top: -30px;
+                    width: 40px;
+                    height: 40px;
+                    background: $white;
+                    color: $text-color;
+                    border-radius: 50px;
+                    @include flex-container(row, center, center);
+                }
+                .card-info {
+                    .price {
+                        .currency {
+                            color: red;
+                        }
+                    }
+                    .title {
+                        font-weight: 700;
+                        line-height: 1.2;
+                        margin: 6px 0;
+                    }
+                    .brand {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

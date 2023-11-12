@@ -1,0 +1,145 @@
+.basket {
+    margin-top: -20px;
+    padding-bottom: 40px;
+
+    .divider-title {
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+        margin: 20px 0;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: 400 !important;
+        position: relative;
+        display: table;
+        height: auto;
+
+        &::before,
+        &::after {
+            content: "";
+            display: table-cell;
+            top: 50%;
+            width: 50%;
+            background-repeat: no-repeat;
+            background-image: url("../images/line.png");
+        }
+
+        &::before {
+            background-position: right 1em top 50%;
+        }
+
+        &::after {
+            background-position: left 1em top 50%;
+        }
+        h3 {
+            font-weight: 400 !important;
+        }
+    }
+    .basket-container {
+        .borderBottomStyle{
+            padding: 0 0 12px;
+            border-bottom: .5px solid $light-text;
+        }
+        max-width: 700px;
+        margin: 0 auto;
+        border: 0;
+        box-shadow: none;
+        background: #1b1c1d;
+        color: hsla(0, 0%, 100%, 0.9);
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 24px;
+        .right {
+            .right-content {
+                align-items: flex-start;
+                position: relative;
+                .text-color-gray {
+                    color: #8e8e93!important;
+                }
+                .infotitle {
+                    font-size: 19px;
+                    font-family:
+                        Lato,
+                        Arial,
+                        Helvetica Neue,
+                        Helvetica,
+                        sans-serif !important;
+                    line-height: 1.4285em;
+                }
+                .infosubtitle {
+                    font-size: 16px;
+                    margin: 6px 0;
+                    font-weight: 300;
+                }
+                .input-stepper {
+                    background: #fff;
+                    border: 4px solid #000;
+                    display: block;
+                    margin-bottom: 20px;
+                    margin: 0 6px;
+                    width: fit-content;
+                    border: none;
+                    padding: 0;
+                    font-size: 14px;
+                    input{
+                        outline: none;
+                        border: none;
+                        width: max-content;
+                        text-align: center;
+                        width: 70px;
+                    }
+                    button{
+                        padding: 0 8px;
+                    }
+                }
+                .deleteBasket {
+                    margin: 0 0 12px;
+                    font-size: 24px;
+                    @include flex-container(row, flex-end, flex-end);
+                }
+                .totalPriceProductBasket {
+                    color: $primary-dark;
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    text-align: right;
+                    font-size: 19px;
+                }
+            }
+        }
+        .about_product_h1{
+            font-size: 20px;
+            margin: 30px 0;
+            font-weight: 700;
+            display: block;
+        }
+        .name_about {
+            width: 30%!important;
+            color: #8e8e93;
+            padding-right: 1rem;
+            font-weight: 700;
+            float: left;
+            margin: 0 0 12px;
+        }
+        .totalPriceH3{
+            margin: 12px 0;
+            color: $primary-dark;
+        }
+        .buttons_in_cart{
+            width: 100%;
+            margin: 24px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                background: $primary-dark;
+                color: $white;
+                padding: 12px 80px!important;
+                font-size: 16px;
+            }
+        }
+    }
+}
